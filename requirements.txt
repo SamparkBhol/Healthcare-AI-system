@@ -1,0 +1,31 @@
+# Core deep learning frameworks and reinforcement learning tools
+jax
+tensorflow
+tensorflow-probability
+torch
+numpy
+scipy
+pandas
+scikit-learn
+
+# Reinforcement learning
+ray
+gym
+openai-muzero-general
+
+# Neural Architecture Search (NAS) and AutoML
+automl
+efficientnet
+ray[tune]
+
+# Causal inference libraries
+dowhy
+pyro-ppl
+
+# Visualization libraries
+matplotlib
+networkx
+
+# Edge deployment
+onnx
+tflite-support

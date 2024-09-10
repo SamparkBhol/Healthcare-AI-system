@@ -1,0 +1,22 @@
+# Environment configuration for Healthcare Simulation
+patient_generator:
+  initial_state_range:
+    low: [30.0, 60.0, 90.0]    # Age, heart rate, blood pressure
+    high: [90.0, 120.0, 140.0]
+  symptom_range:
+    low: [0.0, 0.0, 0.0]       # Fever, pain, other symptoms (binary indicators)
+    high: [1.0, 1.0, 1.0]
+  state_change_noise: 0.1       # Random noise added to state transitions
+  treatment_success_chance: 0.7 # Probability of successful treatment
+
+action_space: 3                 # Number of available actions: Treat A, Treat B, Observe
+
+observation_space:
+  low: [30.0, 60.0, 90.0, 0.0, 0.0, 0.0]   # Age, heart rate, blood pressure, symptoms
+  high: [90.0, 120.0, 140.0, 1.0, 1.0, 1.0]
+
+max_steps: 200                  # Maximum steps per episode
+reward_function:
+  success_reward: 1.0
+  failure_penalty: -1.0
+  observation_penalty: 0.0
