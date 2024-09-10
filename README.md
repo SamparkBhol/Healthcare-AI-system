@@ -77,10 +77,3 @@ python main.py --config path_to_env_config.yaml
 
 I welcome contributions to this project! Feel free to submit issues and pull requests on the GitHub repository. Please make sure to follow the coding standards and guidelines provided.
 
-## License
-
-This project is licensed under the MIT License. You can find more details in the `LICENSE` file.
-
-## Contact
-
-If you have any questions or need further information, please reach out to me at [your-email@example.com](mailto:your-email@example.com).
